@@ -2,10 +2,13 @@ function updateLayout() {
   const portfolioItems = document.querySelectorAll(".portfolio-item");
   const container = document.querySelector(".container");
 
-  const minColumnWidth = 400;
+  let minColumnWidth = 260;
   const gapSize = 20;
 
   const screenWidth = window.innerWidth;
+  if (screenWidth > 420) {
+    minColumnWidth = 400;
+  }
   let columnCount = Math.floor(screenWidth / (minColumnWidth + gapSize));
   columnCount = Math.min(columnCount, 3);
 
@@ -15,7 +18,8 @@ function updateLayout() {
   for (let i = 0; i < columnCount; i++) {
     const column = document.createElement("div");
     column.classList.add("column");
-    column.style.marginRight = gapSize + "px";
+    column.style.marginRight = gapSize / 2 + "px";
+    column.style.marginLeft = gapSize / 2 + "px";
     container.appendChild(column);
     columns.push(column);
   }
