@@ -34,8 +34,16 @@ function updateLayout() {
   });
 }
 
+function shouldUpdateLayout() {
+  const screenWidth = window.innerWidth;
+  const tabletViewportMinWidth = 768;
+  if (screenWidth >= tabletViewportMinWidth) {
+    updateLayout();
+  }
+}
+
 window.addEventListener("load", updateLayout);
-window.addEventListener("resize", updateLayout);
+window.addEventListener("resize", shouldUpdateLayout);
 
 function zoomMenu(x) {
   x.classList.toggle("change");
