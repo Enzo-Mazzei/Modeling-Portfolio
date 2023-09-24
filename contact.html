@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Portfolio - Contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="navbar" class="navbar">
+            <div class="navbar-top">
+            <div class="navbar-left">
+                <h1><a class="navbar-title" href="index.html">Enzo's Portfolio</a></h1>
+            </div>
+            <div class="navbar-right">
+                <a class="menu-icon" onclick="zoomMenu(this); showMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </a>
+                  <ul class="nav-links">
+                    <li><a href="studio-pictures.html">Studio</a></li>
+                    <li><a href="outside-pictures.html">Outside</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.instagram.com/enzomazzei_/"><img src="images/instagram-logo.png" alt="Instagram logo" class="insta-logo"></a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="navbar-bottom">
+                <ul class="nav-links">
+                    <li><a href="studio-pictures.html">Studio</a></li>
+                    <li><a href="outside-pictures.html">Outside</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://www.instagram.com/enzomazzei_/"> <img src="images/instagram-logo.png" alt="Instagram logo" class="insta-logo"></a></li>
+                </ul>
+            </div>
+        </nav>
+    <section class="contact-form">
+        <h1>Contact me</h1>
+        <form action="https://formspree.io/f/mgejndda" method="POST" class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+        <p>You can also reach me directly via email at enzo.mazzei01@gmail.com or on my <a href="https://www.instagram.com/enzomazzei_/">Instagram</a>. I check those regularly, and I'll respond to your message as soon as possible.</p>
+    </section>
+</div>
+    <section class="footer">
+        <p>Copyright © Enzo Mazzei</p>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
