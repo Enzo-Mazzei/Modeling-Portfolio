@@ -78,9 +78,14 @@ header h1 {
     background-color: #333;
 }
 
+.portfolio-item {
+    display: flex;
+    justify-content: center;
+}
 .portfolio-item img {
-    max-width: 25em;
+    max-width: 90%;
     transition: transform 0.75s ease;
+
 }
 .portfolio-item img:hover {
     transform: scale(1.2);
@@ -88,7 +93,6 @@ header h1 {
 .container {
     display: flex;
     justify-content: center;
-    margin-left: 2vw;
 }
 
 .footer {
@@ -158,5 +162,8 @@ header h1 {
     }
     .navbar-right li {
         display: block;
+    }
+    .portfolio-item img {
+        max-width: 25em;
     }
 }
